@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- mapbox api -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+
+    <title>NIT AP Bus Tracker</title>
+</head>
+<body>
+    <H1 style="text-align: center;">NIT AP Bus Tracker</H1>
+    <divi style="width: 100%; height: 100vh"></div>
+    <div id="map" style="width: 80%; height: 70vh; margin:auto"></div>
+    <div style="width: 80%; height: 20vh;  margin:auto; display: flex; flex-direction: row; justify-content: center;">
+        <div style="margin-top: 10px; ">
+        <button style="background-color:rgb(127, 193, 255); border-color: rgb(61, 61, 204);" id="start" onclick="initTracking()" >Start Tracking</button>
+        <button style="background-color:rgb(127, 193, 255); border-color: rgb(61, 61, 204);" id="stop" onclick="stopTracking()" disabled>Stop Tracking</button>
+        <button onclick="trail()">show trail</button>
+        </div>
+        <div id="info" style="background-color: rgb(255, 224, 224);width: 80%; height: 15vh; margin-top: 10px; border-color: rgb(88, 67, 67); border-style: solid; margin-left: 5px;">
+
+        </div>
+        
+    </div>
+    <script src="maphandler.js">   
+    </script>
+</body>
+</html>
